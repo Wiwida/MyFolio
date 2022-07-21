@@ -1,0 +1,23 @@
+.container__homepage {
+    position: relative;
+    height: 100vh;
+
+    .homepage__backgroundlinear {
+        position: absolute;
+        height: 65vh;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgb(26,22,54);
+        background: linear-gradient(90deg, rgba(26,22,54,0.9) 20%, rgba(9,64,96,1) 40%, rgba(28,0,227,0.60) 60%, rgba(0,224,255,0.60) 70%, rgba(0,255,194,0.55) 100%);
+        background-size: 600% 600%;
+        animation: gradient-animation 40s ease infinite;
+        filter: blur(90px);
+    }
+}
+
+@keyframes gradient-animation {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
